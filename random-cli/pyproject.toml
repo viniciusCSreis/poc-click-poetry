@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "random-cli"
+version = "0.1.0"
+description = ""
+authors = ["viniciussousazup <vinicius.sousa@zup.com.br>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+click = "^8.0.3"
+random-cli-framework = {path = "../random-cli-framework"}
+
+[tool.poetry.dev-dependencies]
+
+
+pyinstaller = "^4.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+randomcli = 'random_cli.cmd:main'
